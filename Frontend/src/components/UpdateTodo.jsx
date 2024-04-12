@@ -9,7 +9,7 @@ function UpdateTodo() {
   const [description, setdescription] = useState("");
 
   useEffect(() => {
-    const getAllTodo = fetch("http://localhost:5000/todos")
+    const getAllTodo = fetch("https://todo-assignment-server.vercel.app/todos")
       .then((response) => {
         return response.json();
       })
@@ -23,7 +23,7 @@ function UpdateTodo() {
     console.log(title);
     console.log(description);
 
-    const url = `http://localhost:5000/edit-todo/${isEdit}`;
+    const url = `https://todo-assignment-server.vercel.app/edit-todo/${isEdit}`;
 
     const postData = {
       title: title,

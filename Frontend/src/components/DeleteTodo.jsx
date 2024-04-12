@@ -4,7 +4,7 @@ function DeleteTodo() {
   const [todo, setTodo] = useState([]);
 
   useEffect(() => {
-    const getAllTodo = fetch("http://localhost:5000/todos")
+    const getAllTodo = fetch("https://todo-assignment-server.vercel.app/todos")
       .then((response) => {
         return response.json();
       })

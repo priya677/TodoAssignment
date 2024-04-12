@@ -5,7 +5,7 @@ function CreateTodo() {
   const [title, setTitle] = useState("");
   const [description, setdescription] = useState("");
   function handleClick() {
-    const url = "http://localhost:5000/create-todo";
+    const url = "https://todo-assignment-server.vercel.app/create-todo";
 
     const postData = {
       title: title,
